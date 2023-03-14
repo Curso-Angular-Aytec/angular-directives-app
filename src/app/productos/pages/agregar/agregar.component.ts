@@ -8,8 +8,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class AgregarComponent {
 
-  texto: string  = 'Mensaje inicial';
   color: string = 'red';
+  texto: string  = 'Este campo es obligatorio';
+  valor: boolean = false;
 
   miFormulario: FormGroup = this.fb.group({
     nombre: ['', Validators.required]
